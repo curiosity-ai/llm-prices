@@ -1,0 +1,43 @@
+// See all h5.json configuration options at https://github.com/h5dotnet/Bridge/wiki/global-configuration
+//
+// This project compiles the Tesserae-based LLM pricing site directly into the repository
+// root (output "../") so that the generated index.html replaces the hand-written one and is
+// picked up as-is by the GitHub Pages deployment (which uploads the repo root).
+{
+  "output": "../wwwroot/",
+  "fileName": "app.js",
+  "html": {
+    "disabled": false,
+    "title": "LLM pricing calculator"
+  },
+  "resources": [
+    {
+      "name": "logos",
+      "files": [ "h5/assets/img/logos/*" ],
+      "output": "assets/img/logos"
+    }
+  ],
+  // Only clean the JS/CSS we emit so we never delete the static site files (favicon.png,
+  // 404.html, _redirects, data/, current-v1.json, ...) that live alongside us in the root.
+  "cleanOutputFolderBeforeBuildPattern": "app.js|app.css|app.meta.js",
+  "console": { "enabled": false },
+  "loader": { "type": "Global" },
+  "sourceMap": { "enabled": true },
+  "reflection": {
+    "disabled": false,
+    "target": "inline"
+  },
+  "generateTypeScript": false,
+  "report": { "enabled": false },
+  "rules": {
+    "anonymousType": "Plain",
+    "arrayIndex": "Managed",
+    "autoProperty": "Plain",
+    "boxing": "Managed",
+    "externalCast": "Plain",
+    "inlineComment": "Plain",
+    "integer": "Managed",
+    "lambda": "Plain",
+    "useShortForms": true
+  }
+}
