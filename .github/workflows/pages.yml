@@ -29,6 +29,19 @@ jobs:
         with:
           python-version: '3.x'
 
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+
+      - name: Install h5 compiler
+        run: |
+          dotnet tool install --global h5-compiler
+          echo "$HOME/.dotnet/tools" >> "$GITHUB_PATH"
+
+      - name: Build site (Tesserae -> index.html + app.min.js)
+        run: dotnet build app/LlmPrices.csproj -c Release
+
       - name: Build JSON files
         run: python3 scripts/build.py
 
