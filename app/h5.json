@@ -8,13 +8,18 @@
   "fileName": "app.js",
   "html": {
     "disabled": false,
-    "title": "LLM pricing calculator"
+    "title": "LLM Prices — Compare Studio"
   },
   "resources": [
     {
       "name": "logos",
       "files": [ "h5/assets/img/logos/*" ],
       "output": "assets/img/logos"
+    },
+    {
+      "name": "curiosity-logo.svg",
+      "files": [ "h5/assets/img/curiosity-logo.svg" ],
+      "output": "assets/img"
     }
   ],
   // Only clean the JS/CSS we emit so we never delete the static site files (favicon.png,
