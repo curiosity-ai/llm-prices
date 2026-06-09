@@ -4,7 +4,7 @@
 // root (output "../") so that the generated index.html replaces the hand-written one and is
 // picked up as-is by the GitHub Pages deployment (which uploads the repo root).
 {
-  "output": "../",
+  "output": "../wwwroot/",
   "fileName": "app.js",
   "html": {
     "disabled": false,
