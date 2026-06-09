@@ -1,9 +1,15 @@
 #!/bin/sh
+set -eu
+
 curl -sSL https://dot.net/v1/dotnet-install.sh > dotnet-install.sh
 chmod +x dotnet-install.sh
-./dotnet-install.sh -InstallDir ./dotnet
-export PATH="$PATH:/opt/buildhome/.dotnet/tools:/usr/bin/dotnet:/opt/buildhome/repo/dotnet"
-export DOTNET_ROOT="$HOME/.dotnet"
-./dotnet/dotnet --version
-./dotnet/dotnet tool install --global h5-compiler
-./dotnet/dotnet build app/LlmPrices.csproj -c Release
+
+./dotnet-install.sh --install-dir "$PWD/dotnet"
+
+export DOTNET_ROOT="$PWD/dotnet"
+export PATH="$DOTNET_ROOT:$HOME/.dotnet/tools:$PATH"
+export DOTNET_CLI_TELEMETRY_OPTOUT=1
+
+dotnet --info
+dotnet tool install --global h5-compiler
+dotnet build app/LlmPrices.csproj -c Release
