@@ -16,3 +16,5 @@ dotnet build app/LlmPrices.csproj -c Release
 
 python3 scripts/build.py
 cp current-v1.json wwwroot/current-v1.json
+mkdir wwwroot/data
+cp data/*.json wwwroot/data/
