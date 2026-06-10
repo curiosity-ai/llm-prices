@@ -46,6 +46,7 @@ html, body {
     border: 1px solid var(--lp-border);
     border-radius: 12px;
     box-shadow: var(--lp-shadow);
+    padding:8px 16px;
 }
 
 .lp-card-title {

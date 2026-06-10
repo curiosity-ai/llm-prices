@@ -154,7 +154,6 @@ namespace LlmPrices
 
             var content = VStack()
                 .WS()
-                .MaxWidth(1280.px())
                 .Padding(24.px())
                 .Gap(20.px())
                 .Style(s => { s.marginLeft = "auto"; s.marginRight = "auto"; })
@@ -182,7 +181,7 @@ namespace LlmPrices
 
             var about = TextBlock("About").Class("lp-nav-link").OnClick((s, e) => ShowAbout());
 
-            var inner = HStack().WS().MaxWidth(1280.px()).AlignItemsCenter().Gap(14.px())
+            var inner = HStack().WS().AlignItemsCenter().Gap(14.px())
                 .PaddingLeft(24.px()).PaddingRight(24.px())
                 .Style(st => { st.marginLeft = "auto"; st.marginRight = "auto"; })
                 .Children(logo, title, Raw().Grow(), by, about);
@@ -474,7 +473,7 @@ namespace LlmPrices
                 var note = Raw(Div(_("lp-tray-note")));
                 note.Do(el => el.Render().innerHTML =
                     "<b class='lp-good'>" + Esc(rows[0].Model.Name) + "</b> is " + ratio.ToString("0.0") +
-                    "× cheaper than the priciest here.");
+                    "× cheaper than the priciest.");
                 _trayHolder.Add(note);
             }
         }
@@ -490,7 +489,7 @@ namespace LlmPrices
             var header = HStack().WS().AlignItemsCenter().Gap(12.px()).Children(
                 HStack().AlignItems(ItemAlign.Baseline).Gap(8.px()).Grow().Children(
                     TextBlock("All models").Class("lp-card-title"),
-                    TextBlock("· blended = cost of current token mix").Small().Foreground("var(--lp-muted)")),
+                    TextBlock("· computed = cost of current token mix").Small().Foreground("var(--lp-muted)")),
                 search.W(260.px()));
 
             return VStack().Class("lp-card").WS().Padding(22.px()).Gap(8.px()).Children(
@@ -536,7 +535,7 @@ namespace LlmPrices
                     Th("INPUT", "input").W(110.px()),
                     Th("CACHED", "cached").W(110.px()),
                     Th("OUTPUT", "output").W(110.px()),
-                    Th("BLENDED", "blended").W(110.px())));
+                    Th("COMPUTED", "computed").W(110.px())));
         }
 
         private static TextBlock Th(string label, string col)
