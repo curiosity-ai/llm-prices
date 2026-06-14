@@ -145,6 +145,19 @@
       ]
     },
     {
+      "id": "gemini-2.5-flash-thinking",
+      "name": "Gemini 2.5 Flash Thinking",
+      "price_history": [
+        {
+          "input": 0.15,
+          "output": 3.5,
+          "from_date": null,
+          "to_date": null,
+          "input_cached": null
+        }
+      ]
+    },
+    {
       "id": "gemini-2.5-flash-lite",
       "name": "Gemini 2.5 Flash-Lite",
       "price_history": [
@@ -167,6 +180,32 @@
           "from_date": null,
           "to_date": null,
           "input_cached": 0.03
+        }
+      ]
+    },
+    {
+      "id": "gemini-2.5-flash-preview",
+      "name": "Gemini 2.5 Flash Preview",
+      "price_history": [
+        {
+          "input": 0.15,
+          "output": 0.6,
+          "from_date": null,
+          "to_date": null,
+          "input_cached": null
+        }
+      ]
+    },
+    {
+      "id": "gemini-2.5-flash-preview-thinking",
+      "name": "Gemini 2.5 Flash Preview Thinking",
+      "price_history": [
+        {
+          "input": 0.15,
+          "output": 3.5,
+          "from_date": null,
+          "to_date": null,
+          "input_cached": null
         }
       ]
     },
