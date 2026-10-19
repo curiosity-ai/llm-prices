@@ -39,6 +39,19 @@
           "input_cached": 0.025
         }
       ]
+    },
+    {
+      "id": "mercury-decide",
+      "name": "Mercury Decide",
+      "price_history": [
+        {
+          "input": 0.02,
+          "output": 0,
+          "from_date": "2026-10-19",
+          "to_date": null,
+          "input_cached": null
+        }
+      ]
     }
   ]
 }
