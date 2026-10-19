@@ -46,14 +46,17 @@ namespace LlmPrices
             { "openai",      "OpenAI"      },
             { "anthropic",   "Anthropic"   },
             { "google",      "Google"      },
+            { "inception",   "Inception"   },
             { "deepseek",    "DeepSeek"    },
             { "moonshot-ai", "Moonshot AI" },
             { "meta",        "Meta"        },
+            { "meta-ai",     "Meta AI"     },
             { "xai",         "xAI"         },
             { "mistral",     "Mistral"     },
             { "qwen",        "Qwen"        },
             { "amazon",      "Amazon"      },
             { "minimax",     "MiniMax"     },
+            { "typesafe",    "Typesafe"    },
         };
 
         private static readonly Dictionary<string, string> VendorColors = new Dictionary<string, string>
@@ -61,14 +64,17 @@ namespace LlmPrices
             { "openai",      "#10a37f" },
             { "anthropic",   "#d97757" },
             { "google",      "#4285f4" },
+            { "inception",   "#3b0764" },
             { "deepseek",    "#4d6bfe" },
             { "moonshot-ai", "#16161d" },
             { "meta",        "#0866ff" },
+            { "meta-ai",     "#0866ff" },
             { "xai",         "#101013" },
             { "mistral",     "#fa520f" },
             { "qwen",        "#6e56cf" },
             { "amazon",      "#e8912d" },
             { "minimax",     "#f23f5d" },
+            { "typesafe",    "#22c55e" },
         };
 
         private static readonly Dictionary<string, string> VendorInitials = new Dictionary<string, string>
@@ -76,14 +82,17 @@ namespace LlmPrices
             { "openai",      "AI" },
             { "anthropic",   "A\\" },
             { "google",      "G"  },
+            { "inception",   "I"  },
             { "deepseek",    "DS" },
             { "moonshot-ai", "K"  },
             { "meta",        "M"  },
+            { "meta-ai",     "M"  },
             { "xai",         "X"  },
             { "mistral",     "M"  },
             { "qwen",        "Q"  },
             { "amazon",      "A"  },
             { "minimax",     "MM" },
+            { "typesafe",    "TS" },
         };
 
         private static string VendorName(string vendor)
