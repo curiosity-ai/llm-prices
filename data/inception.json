@@ -1,0 +1,57 @@
+{
+  "vendor": "inception",
+  "models": [
+    {
+      "id": "mercury-3",
+      "name": "Mercury 3",
+      "price_history": [
+        {
+          "input": 0.1,
+          "output": 0.35,
+          "from_date": "2026-10-19",
+          "to_date": null,
+          "input_cached": 0.01
+        }
+      ]
+    },
+    {
+      "id": "mercury-2.5",
+      "name": "Mercury 2.5",
+      "price_history": [
+        {
+          "input": 0.2,
+          "output": 0.75,
+          "from_date": null,
+          "to_date": null,
+          "input_cached": 0.02
+        }
+      ]
+    },
+    {
+      "id": "mercury-2",
+      "name": "Mercury 2",
+      "price_history": [
+        {
+          "input": 0.25,
+          "output": 0.75,
+          "from_date": null,
+          "to_date": null,
+          "input_cached": 0.025
+        }
+      ]
+    },
+    {
+      "id": "mercury-decide",
+      "name": "Mercury Decide",
+      "price_history": [
+        {
+          "input": 0.02,
+          "output": 0,
+          "from_date": "2026-10-19",
+          "to_date": null,
+          "input_cached": null
+        }
+      ]
+    }
+  ]
+}
