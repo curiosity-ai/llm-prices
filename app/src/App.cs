@@ -45,6 +45,7 @@ namespace LlmPrices
         {
             { "openai",      "OpenAI"      },
             { "anthropic",   "Anthropic"   },
+            { "cloudflare",  "Cloudflare"  },
             { "google",      "Google"      },
             { "inception",   "Inception"   },
             { "deepseek",    "DeepSeek"    },
@@ -63,6 +64,7 @@ namespace LlmPrices
         {
             { "openai",      "#10a37f" },
             { "anthropic",   "#d97757" },
+            { "cloudflare",  "#f38020" },
             { "google",      "#4285f4" },
             { "inception",   "#3b0764" },
             { "deepseek",    "#4d6bfe" },
@@ -81,6 +83,7 @@ namespace LlmPrices
         {
             { "openai",      "AI" },
             { "anthropic",   "A\\" },
+            { "cloudflare",  "CF" },
             { "google",      "G"  },
             { "inception",   "I"  },
             { "deepseek",    "DS" },
