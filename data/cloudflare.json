@@ -1,0 +1,57 @@
+{
+  "vendor": "cloudflare",
+  "models": [
+    {
+      "id": "clef",
+      "name": "Clef",
+      "price_history": [
+        {
+          "input": 0.24,
+          "output": 0,
+          "from_date": null,
+          "to_date": null,
+          "input_cached": null
+        }
+      ]
+    },
+    {
+      "id": "clef-flash",
+      "name": "Clef Flash",
+      "price_history": [
+        {
+          "input": 0.038,
+          "output": 0,
+          "from_date": null,
+          "to_date": null,
+          "input_cached": null
+        }
+      ]
+    },
+    {
+      "id": "clef-omni",
+      "name": "Clef Omni",
+      "price_history": [
+        {
+          "input": 0.15,
+          "output": 0,
+          "from_date": null,
+          "to_date": null,
+          "input_cached": null
+        }
+      ]
+    },
+    {
+      "id": "clairic",
+      "name": "Clairic",
+      "price_history": [
+        {
+          "input": 0.10,
+          "output": 0,
+          "from_date": null,
+          "to_date": null,
+          "input_cached": null
+        }
+      ]
+    }
+  ]
+}
