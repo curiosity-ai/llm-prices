@@ -65,6 +65,45 @@
           "input_cached": 0.15
         }
       ]
+    },
+    {
+      "id": "muse-wonder-1.0",
+      "name": "Muse Wonder 1.0",
+      "price_history": [
+        {
+          "input": 4,
+          "output": 20,
+          "from_date": null,
+          "to_date": null,
+          "input_cached": 0.2
+        }
+      ]
+    },
+    {
+      "id": "muse-ember-1.0",
+      "name": "Muse Ember 1.0 ≤200k",
+      "price_history": [
+        {
+          "input": 0.1,
+          "output": 0.5,
+          "from_date": null,
+          "to_date": null,
+          "input_cached": 0.004
+        }
+      ]
+    },
+    {
+      "id": "muse-ember-1.0-200k",
+      "name": "Muse Ember 1.0 >200k",
+      "price_history": [
+        {
+          "input": 0.3,
+          "output": 1.5,
+          "from_date": null,
+          "to_date": null,
+          "input_cached": 0.012
+        }
+      ]
     }
   ]
 }

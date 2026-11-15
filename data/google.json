@@ -267,7 +267,7 @@
       "price_history": [
         {
           "input": 0.25,
-          "output": 1.50,
+          "output": 1.5,
           "from_date": null,
           "to_date": null,
           "input_cached": 0.025
@@ -279,7 +279,7 @@
       "name": "Gemini 3.5 Flash",
       "price_history": [
         {
-          "input": 1.50,
+          "input": 1.5,
           "output": 9,
           "from_date": null,
           "to_date": null,
@@ -299,8 +299,8 @@
           "input_cached": 0.075
         },
         {
-          "input": 1.50,
-          "output": 7.50,
+          "input": 1.5,
+          "output": 7.5,
           "from_date": "2027-01-01",
           "to_date": null,
           "input_cached": 0.15
@@ -319,8 +319,8 @@
           "input_cached": 0.075
         },
         {
-          "input": 1.50,
-          "output": 7.50,
+          "input": 1.5,
+          "output": 7.5,
           "from_date": "2027-01-01",
           "to_date": null,
           "input_cached": 0.15
@@ -339,8 +339,8 @@
           "input_cached": 0.075
         },
         {
-          "input": 1.50,
-          "output": 7.50,
+          "input": 1.5,
+          "output": 7.5,
           "from_date": "2027-01-01",
           "to_date": null,
           "input_cached": 0.15
@@ -352,8 +352,8 @@
       "name": "Gemini 3.5 Flash-Lite",
       "price_history": [
         {
-          "input": 0.30,
-          "output": 2.50,
+          "input": 0.3,
+          "output": 2.5,
           "from_date": null,
           "to_date": null,
           "input_cached": 0.03
@@ -369,14 +369,47 @@
           "output": 10,
           "from_date": null,
           "to_date": "2026-12-01",
-          "input_cached": 0.10
+          "input_cached": 0.1
         },
         {
           "input": 4,
           "output": 20,
           "from_date": "2026-12-01",
           "to_date": null,
-          "input_cached": 0.20
+          "input_cached": 0.2
+        }
+      ]
+    },
+    {
+      "id": "gemini-4-carbon",
+      "name": "Gemini 4 Carbon",
+      "price_history": [
+        {
+          "input": 2,
+          "output": 10,
+          "from_date": null,
+          "to_date": "2026-12-01",
+          "input_cached": 0.1
+        },
+        {
+          "input": 4,
+          "output": 20,
+          "from_date": "2026-12-01",
+          "to_date": null,
+          "input_cached": 0.2
+        }
+      ]
+    },
+    {
+      "id": "gemini-4-hydrogen",
+      "name": "Gemini 4 Hydrogen",
+      "price_history": [
+        {
+          "input": 1.5,
+          "output": 7.5,
+          "from_date": null,
+          "to_date": null,
+          "input_cached": 0.075
         }
       ]
     }
